@@ -70,9 +70,23 @@
             margin-top: 30px;
         }
         footer a {
-            color: white;
-            text-decoration: none;
-        }
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 25px; /* Збільшено відступ між іконками */
+}
+
+footer a img {
+    width: 50px; /* Розмір іконки */
+    height: 50px;
+    margin-bottom: 20px; /* Відступи для підйому іконки */
+    opacity: 0.7; /* Прозорість іконки (0 - повністю прозора, 1 - без прозорості) */
+    transition: opacity 0.3s ease; /* Плавний перехід прозорості */
+}
+
+footer a:hover img {
+    opacity: 1; /* Прозорість іконки при наведенні (повна непрозорість) */
+}
 
         .document-box {
             padding: 20px;
@@ -202,6 +216,14 @@ a:hover {
 
     <footer>
         <p>&copy; 2024 Цивільний шлюб українки з поляком. Всі права захищені.</p>
+        <!-- Іконка Instagram -->
+        <a href="https://www.instagram.com/anna_kondratska/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <!-- Іконка Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=100043422121415" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
     </footer>
 </div>
 </body>
