@@ -63,29 +63,28 @@
             font-size: 18px;
         }
         footer {
-            background-color: #1d200aa1;
-            color: white;
-            text-align: center;
-            padding: 1px 0;
-            margin-top: 30px;
-        }
-        footer a {
+    background-color: #1d200aa1;
     color: white;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 25px; /* Збільшено відступ між іконками */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    display: inline-flex; /* Розташування тексту та іконок в один рядок */
+    align-items: center; /* Вирівнювання іконок за текстом */
+    margin: 0;
+    gap: 15px; /* Відстань між текстом і іконками */
 }
 
 footer a img {
-    width: 50px; /* Розмір іконки */
-    height: 50px;
-    margin-bottom: 20px; /* Відступи для підйому іконки */
-    opacity: 0.7; /* Прозорість іконки (0 - повністю прозора, 1 - без прозорості) */
-    transition: opacity 0.3s ease; /* Плавний перехід прозорості */
+    width: 40px; /* Розмір іконки */
+    height: 40px;
+    transition: transform 0.3s ease; /* Ефект збільшення при наведенні */
 }
 
 footer a:hover img {
-    opacity: 1; /* Прозорість іконки при наведенні (повна непрозорість) */
+    transform: scale(1.2); /* Легке збільшення іконки при наведенні */
 }
 
         .document-box {
@@ -186,15 +185,16 @@ a:hover {
     </div>
 
         <div class="document-box">
-        <h2>Для подання заяви до суду необхідно підготувати такі документи:</h2>
+        <h2>Для подання заяви до суду необхідно підготувати копії такі документи у двох екземплярах:</h2>
         <ul>
-            <li>Wniosek o zwolnienie obowiązku złożenia lub przedstawienia dokumentу kierownikowi urzędu stanu cywilnego для укладення шлюбу, який можна взяти в суді, або видрукувати самому з сайту <a href="https://wsoi.ms.gov.pl/Data/Files/_public/usuzup_sr_rodzniel/1v2/73_k_uu_sr-karta.pdf" target="_blank">https://wsoi.ms.gov.pl/Data/Files/_public/usuzup_sr_rodzniel/1v2/73_k_uu_sr-karta.pdf</a>.</li>
-            <li>Одна копія позову з усіма додатками для передачі іншій стороні (подається від імені нареченого).</li>
-            <li>Одна копія позову для себе (на ній у реєстратурі суду поставлять дату подання).</li>
+            <li>Wniosek o zwolnienie obowiązku złożenia lub przedstawienia dokumentu kierownikowi urzędu stanu cywilnego для укладення шлюбу, який можна взяти в суді, або видрукувати самому з сайту <a href="https://wsoi.ms.gov.pl/Data/Files/_public/usuzup_sr_rodzniel/1v2/73_k_uu_sr-karta.pdf" target="_blank">https://wsoi.ms.gov.pl/Data/Files/_public/usuzup_sr_rodzniel/1v2/73_k_uu_sr-karta.pdf</a>.</li>
+            Одна копія позову з усіма додатками для передачі іншій стороні (подається від імені нареченого).</li>
+            Одна копія позову для себе (на ній у реєстратурі суду поставлять дату подання).</li>
             <li>Копії документів з перекладом tłumacza przysięgłego:</li>
-            <li>Перші дві сторінки закордонного паспорта.</li>
-            <li>Свідоцтво про народження.</li>
-            <li>Довідка про те, що Україна не видає zaświadczeń (довідки про право на шлюб). Суд не вимагає цей документ, тому він є необов’язковим.</li>
+            <li>Копії  закордонного паспорта.</li>
+            <li>Копії свідоцтва про народження.</li>
+            <li>Довідка про те, що Україна не видає zaświadczeń (довідки про право на шлюб).</li>
+            Суд не вимагає цей документ, тому він є необов’язковим.</li>
             <li>Копія карти побиту (якщо така є).</li>
             <li>Підтвердження оплати судового збору (100 злотих).</li>
             </ul>
@@ -215,15 +215,17 @@ a:hover {
 
 
     <footer>
-        <p>&copy; 2024 Цивільний шлюб українки з поляком. Всі права захищені.</p>
-        <!-- Іконка Instagram -->
-        <a href="https://www.instagram.com/anna_kondratska/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
-        <!-- Іконка Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100043422121415" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-        </a>
+        <p>
+            &copy; 2024 Цивільний шлюб українки з поляком. Всі права захищені.
+            <!-- Іконка Instagram -->
+            <a href="https://www.instagram.com/anna_kondratska/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <!-- Іконка Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=100043422121415" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+        </p>
     </footer>
 </div>
 </body>
